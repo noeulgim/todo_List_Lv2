@@ -1,5 +1,4 @@
-import React from 'react';
-import Router from './router/Router';
+import Router from './router/router';
 import { Provider } from 'react-redux';
 import store, { persistor } from './redux/config/store';
 import { PersistGate } from 'redux-persist/integration/react';

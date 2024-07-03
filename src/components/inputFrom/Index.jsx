@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addTodo } from '../../redux/modules/todo';
-import {InputListWrapper, StInput, StLabel, StLabelSpan} from './StyledInput';
+import {StyledInputListWrapper, StyledInput, StyledLabel, StyledLabelSpan} from './StyledInput';
 
 const InputForm = () => {
   const [input, setInput] = useState({ title: '', text: '' });
@@ -25,19 +25,19 @@ const InputForm = () => {
   };
 
   return (
-    <InputListWrapper>
+    <StyledInputListWrapper>
       <div className="inputWrap">
-        <StLabel>
-          <StLabelSpan>제목</StLabelSpan>
-          <StInput name="title" value={input.title} onChange={onInputChangeHandler} required />
-        </StLabel>
-        <StLabel>
-          <StLabelSpan>내용</StLabelSpan>
-          <StInput name="text" value={input.text} onChange={onInputChangeHandler} required />
-        </StLabel>
+        <StyledLabel>
+          <StyledLabelSpan>제목</StyledLabelSpan>
+          <StyledInput name="title" value={input.title} onChange={onInputChangeHandler} required />
+        </StyledLabel>
+        <StyledLabel>
+          <StyledLabelSpan>내용</StyledLabelSpan>
+          <StyledInput name="text" value={input.text} onChange={onInputChangeHandler} required />
+        </StyledLabel>
       </div>
       <button onClick={ClickAddHandler}>추가하기</button>
-    </InputListWrapper>
+    </StyledInputListWrapper>
   );
 };
 

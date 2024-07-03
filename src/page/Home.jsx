@@ -1,5 +1,4 @@
-import React from 'react';
-import InputForm from '../components/input/Index'
+import InputForm from '../components/inputFrom/Index'
 import TodoList from '../components/todoList/todoList/Index';
 
 function Home() {

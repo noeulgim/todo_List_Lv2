@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ListDetailWrap = styled.div`
+export const StyledListDetailWrap = styled.div`
     position: relative;
     background-color: rgb(223,229,194);
     margin: 10%;
@@ -11,13 +11,13 @@ export const ListDetailWrap = styled.div`
     flex-direction: column;
     justify-content: space-between;
 `
-export const ButtonWrap = styled.div`
+export const StyledButtonWrap = styled.div`
     width: auto;
     height: auto;
     display: flex;
     justify-content: flex-end;
 `;
-export const StCloseButton = styled.button`
+export const StyledCloseButton = styled.button`
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -27,18 +27,18 @@ export const StCloseButton = styled.button`
         color: red;
     }
 `;
-export const DetailWrap = styled.div`
+export const StyledDetailWrap = styled.div`
     display: flex;
     flex-direction: column;
     text-align: left;
     flex: 1;
 `
-export const Line = styled.div`
+export const StyledLine = styled.div`
     border-bottom: 1px dotted #9a9a9a;
     width: 100%;
     margin-bottom: 5%;
 `;
-export const TextWrap = styled.div`
+export const StyledTextWrap = styled.div`
     background-color: rgba(255, 255, 255, .7);
     border-radius: 10px;
     height: auto;

@@ -1,26 +1,26 @@
-import React, {useEffect} from 'react'
+import {useEffect} from 'react'
 import { useSelector } from 'react-redux'
 import { Link, useParams } from 'react-router-dom';
-import { ListDetailWrap, ButtonWrap, DetailWrap, TextWrap, StCloseButton, Line } from './StyledListDetail';
+import { StyledListDetailWrap, StyledButtonWrap, StyledDetailWrap, StyledTextWrap, StyledCloseButton, StyledLine } from './StyledListDetail';
 
 function ListDetail() {
     const {id} = useParams();
     const detailTodo = useSelector(state => state.todoReducer.find(e => e.id === +id))
     useEffect(() => {}, [detailTodo, id]);
     return (
-        <ListDetailWrap>
-            <ButtonWrap>
-                <Link to="/"><StCloseButton>x</StCloseButton></Link>
-            </ButtonWrap>
-            <DetailWrap>
+        <StyledListDetailWrap>
+            <StyledButtonWrap>
+                <Link to="/"><StyledCloseButton>x</StyledCloseButton></Link>
+            </StyledButtonWrap>
+            <StyledDetailWrap>
                 <h1>{detailTodo.title}</h1>
                 <p>{detailTodo.id}</p>
-                <Line />
-                <TextWrap>
+                <StyledLine />
+                <StyledTextWrap>
                     <h3>{detailTodo.text}</h3>
-                </TextWrap>
-            </DetailWrap>
-        </ListDetailWrap>
+                </StyledTextWrap>
+            </StyledDetailWrap>
+        </StyledListDetailWrap>
     )
 }
 

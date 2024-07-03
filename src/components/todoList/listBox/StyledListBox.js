@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const ListBoxWrapper = styled.div`
+export const StyledListBoxWrapper = styled.div`
   padding: 0 5%;
   text-align: left;
 `;
-export const ListBoxWrap = styled.div`
+export const StyledListBoxWrap = styled.div`
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 5%;
@@ -15,9 +15,9 @@ export const ListBoxWrap = styled.div`
     background-color: #fff;
   }
 `;
-export const StDeleteButton = styled.button`
+export const StyledDeleteButton = styled.button`
   border-color: red;
 `
-export const StDoneButton = styled.button`
+export const StyledDoneButton = styled.button`
   border-color: green;
 `
